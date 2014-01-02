@@ -1,0 +1,134 @@
+﻿body
+{
+    font-size: .85em;
+    font-family: "Segoe UI" , Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+}
+
+header, footer, nav, section
+{
+    display: block;
+}
+
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset
+{
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend
+{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea
+{
+    min-height: 75px;
+}
+
+.editor-label
+{
+    margin: 1em 0 0 0;
+}
+
+.editor-field
+{
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #f00;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+/* Styles for indexView
+-----------------------------------------------------------*/
+#Board
+{
+    width: 700px;
+    max-width: 700px;
+    visibility: hidden;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    top: 20px;
+    float: left;
+}
+#GameBoard
+{
+    border-spacing: 1px;
+    background-color: Silver;
+    border: 1px;
+    border-color: Black;
+}
+#GameBoard tr td
+{
+    padding: 0px;
+    border: 1px;
+    border-style: solid;
+    width: 6px;
+    height: 6px;
+}
+#GameBoard tr td .Cell
+{
+    background: url("../Images/CellAlive.png") no-repeat;
+    width: 5px;
+    height: 5px;
+    display: none;
+}
+#RightSide
+{
+    top: 50px;
+    width: 150px;
+    margin-top: 50px;
+    display: block;
+    float: left;
+    clear:right; 
+}
+#Controls
+{
+    top: 50px;
+    width: 50px;
+    margin-top: 50px;
+    display: block;
+}
+#Message
+{
+    padding:10px;
+    border-style:solid;
+    border-color:Black;   
+    width: 150px;    
+    display: block;
+    float: left;
+    margin-top: 10px;
+}

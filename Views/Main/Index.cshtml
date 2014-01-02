@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id ="Board">
+<h2>Game of Life</h2>
+<table id="GameBoard">
+@for (int x = 0; x < ViewBag.GridRow; x++)
+{
+    <tr id="@x">
+    @for (int y = 0; y < ViewBag.GridColumn; y++)
+    {
+        <td id="@x-@y" >
+        <div class="Cell"></div>
+        </td>
+    }
+    </tr>
+}
+</table>
+</div>
+<div id="RightSide">
+<div id="Controls">
+<input id="BtStart" type="button" value="Start" />
+<input id="BtStop" type="button" value="Stop"/>
+<input id="BtReset" type="button" value="Reset"/>
+</div>
+<div id="Message">
+<p id="state"></p>
+</div>
+</div>
+@section JavaScript
+{
+   <script type="text/javascript" src="@Url.Content("/Scripts/GameOfLife.js")"></script>
+ 
+}
